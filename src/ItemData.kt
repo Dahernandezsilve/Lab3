@@ -1,11 +1,11 @@
-class Lab3 {
+data class ItemData (
     // No tocar esta clase ---
-    data class ItemData(
+
         var originalPos: Int,
         var originalValue: Any,
         var type: String? = null,
         var info: String? = null
-    )
+)
     fun main() {
         val result = processList(listOf(20, 25, 2, 7, "hola", "", true, false, null, 2.0))
         println(result)
@@ -58,4 +58,3 @@ class Lab3 {
         }
         return listaFinal
     }
-}
